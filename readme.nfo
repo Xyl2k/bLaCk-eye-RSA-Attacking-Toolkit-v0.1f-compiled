@@ -1,0 +1,154 @@
+         ÜßÜÜÜ               Ü   ß     Ü
+          ßßßßßß                          Ü       ÜÜÜÜ                ÜÜÜÜ
+         ÞÛÛÛÛ²²                           ²ÜÜ   ßßÛÛÛ²          ÜÜÜßßÛÛÛÛßÜ
+°°°°°°°°  ÛÛÛÛÛ²Û  ° °°°°°°°°°°°°°°°°°°  °°ÞÝ ßßßßßßÛÛÛÛÛÛÛÜÜÜßßß   ²ÛÛß °  °°°
+       ÜÜÜÜÛÛÛÛÛ²²Ý                       Üß        ßÛÛÛ           ÛÛÛß
+  ÜÜ²²ÜÛÜÛÜ²²²ÛÛÛÛ²²ÜÜ  ÜÜÛÛÛÛÛÜÜÜÜ   ÜÜßß           ßÛÛÛ         ÛÛÛß
+þßß     ßßßÛÛÜÜßßÛÛÛ²²²Ü ßÛÛÛÛÛÛÛÛÛÛßß                ß²ÛÛ       ÛÛ²ß
+  ÜÜÜÛÛÛÜÜ   ßÛÛ  ßÛÛÛ²²Û ÞÛÛÛÛÛßß                     ß²ÛÛ     ßÛ²ß
+Üß   ßßÛÛ²ßÜ    Ü  ÞÛÛÛ²²Ý ÛÛÛÛÝ                        ß²ÛÛ
+     Û²ÜÜ   ßßß   ÜÛÛÛÛ²²Ý ßÛÛÛÛÜÜ   ÜÜß     ÜÜÜÜÜ  ß    ß²ÛÛ
+  ÜßßßßÛÛÛÛÛÜÜ²ÜÛÛÛÛÛ²²²ß    Ü²²²ßßßß   ÜÜ²ÛÛÛÛÛÛ²²²Ü Ü   Û²ÛÛ
+     °±²ÛÛÜÛßßÛÛÛÛ²²ßß    ÜÜßßß       ÜÛÛÛßßßßßßßßÛÛ²Ýß   Þ²Û²²
+     ²²Û²  ßßßÜÜ      Üþß            ÞÛÛß      ßßÜ ßÛ² Û  ÛÛÛ²Ý          Ü
+Ü   Þ²ÛÛÝ       ß²Ü  ÞÝ               ²Ý          ß Þ² ÞÝÛÛ²²ß      ÜÜß      Ü
+ ßÜÜÛÛ²²Ý   Ü      ßÛÜÜ                ßþ          Üß ÜÛÛÛÛÛÝ ÜÜÜ²²ß
+   ßÛÛ²²²Üß          ß²²ÛÜÜÜÜ°             °ÜÜÜÜ²²²ÜÛÛÛÛÛÛßßßßß²ßÛÛ²²ÜÜ cH!SAC
+°°°   ßßß Ü²²²ÜÜ  ° Ü ° ßß²²²ÛÛÛÜÜÜÜÜÜÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²²ßßÜÜÜÜÜÛßßßßßßÛÛ²²²ÜÜ °°°
+         ßßß±±±±ßßß         ßßß²²²²Û²ÛÛÛÛÛßÛÛÛÛ±ß²²ÜÜÛÛßßß°°  °°°° ß    ° ßß Ü
+                                  ßßßßß²²ÛÛÛÛ²²²ßßßß
+
+      ÜÜ²ÜÜ             [ Reverse Engineering Team ]               ÜÜ²ÜÜ
+     þ  ÛÛÛÛÛ                                                  ° ±ÛÛÛÛ  þ
+   ÜÜÜÜÛÛÛÛ²ß                  ÜÜÜÛÛ²²±±²²ÛÛÜÜ                   ßÛÛÛÛÛÜ²ÜÜ
+ ²ÛÛÛÛßß          ÜÜÜÜÜ   ÜÜ²ÛÛÛÛ²²ßßßß°ßß²²ÛÛÛÛÛ²ÜÜ   ²±²ÜÜ          ßß±²ÛÛÛ
+°±²ÛÛ²      ÜÜÜÜÛÛÛÛ²²ÛÛÛÜÜ Û²ß                ß²Û ÜÜÛÛÛÛÛÛÛÛÛÜÜÜÜ      ²ÛÛÛÛ²
+ß²ÛÛÛ±ÛÛÛÛÛÛÛÛ²²ßßßß  ßÛÛÛÛÜ        ÜÜÜ±Ü         ÜÛÛÛÛß  ßßßß²²²ÛÛÛÛÛÛÛÛÛÛ²²ß
+   ßß²²²²ß           ßÜ ±²ÛÛÛÜÜÜÜÛÛÛÛÛÛÛÛÛÛÛÜÜÜÜÜÛÛÛÛ² Üß           ß²²²²ßß
+                   ß     ß²ÛÛÛÛÛÛÛÛ²ßßßßßßÛÛÛÛÛÛÛ²²ßß     ß
+                þ            ßßßß            ßßßß            þ
+                          RSA Attacking Toolkit v0.1f
+                                By bLaCk-eye [RET]
+
+  .About
+  ******
+  
+  	This tool is supposed to help crackers who are cracking targets
+  protected by RSA and who aren't attackable by the classic method of
+  factoring i.e who'se modulus is > 400 bits.
+
+  .How to use
+  ***********
+	
+  	It's very easy to use it once you know the when the attacks
+  apply.So here are the explanations:
+
+  1.Common Modulus Attack: not really an attack but more of a tool, its
+  purpose is to find the factors of the modulus given the public AND
+  secret key, i.e E and D
+  	So entering N,D,E you find P,Q so that N = P * Q.
+  	I included it in this 'toolkitt' as i got asked many times
+  by other crackers if you can find the factors of N given D and E is
+  possible. The answer is yes. The algo which i used can be found here:
+
+  http://math.usask.ca/~wurtz/crypt/attacks_rsa/node1.html
+
+  2. Weger Attack: this attack applies when the factors of N are close
+  one another i.e the diference |P - Q| is small in comparison to P and
+  Q.
+  	So if let's say P and Q have the same bitsize s than for the
+  RSA key to be susceptible to this attack then |P-Q|  bitsize must
+  be smaller then (s/2)
+  E.g.	P bitsize=256 bits
+  	Q bitsize=256 bits
+  	|P-Q| bitsize is 100bits then they key generated with this 
+  primes is attackble.
+  When testing a RSA key for this attack if you don't get any
+  result after at most 5mins then the attack don't work.
+  
+  BTW: you can try this attack on Amenesia Basis#1 Crackme that presents
+  an RSA key with exactly this weakness.
+
+  3. Wiener Attack: this attack applies when the private key is 
+  	D < (1/3)*N^(1/4) and if P < Q < 2P (which is true most of the
+  times.).
+  	So if you have an s bit modulus and if the bitsize of the 
+  private key is < (s/4) bits than you can succesfully recover.
+  	The attack can be improved, but i'm lazy so i only did the
+  easier version :).
+
+  4. Low Exponent Attack:
+  	If E=3 and the message is short enough and not padded then
+  there's a possibility that M^E < N so the modular reductions don't
+  take place so computing M having the ciphertext is just a matter
+  of computing the E'th root from the cipher text.
+	As input you must provide N and the ciphertext
+
+  BTW: you can try this attack on Amenesia Basis#2 Crackme that presents
+  an RSA key with exactly this weakness.
+
+  .Bugs
+  ******
+  	Send them to bLaCk@reteam.org or correct them yourself, i gave
+  you the source right? :)
+
+  .Future plans
+  *************
+
+  - add threads for Weger attack
+  - add Cycling attack - i need to find more info about how to efficiently
+  implemented (i know it's not an efficient attack from the start but
+  people asked for it)
+  - add ? (here you put what you think is missing)
+
+  .History
+  *********
+  	- v.0.1f - added the low public exponent 'attack' :)
+		   - added automatic base convertion, so it's easier to
+  		   work with
+		   - added automatic md5 hasher (a request)
+		   - added Encrypt/Decrypt functions to play with 
+  		   the RSA keys
+    
+    - v.0.1b - first version released
+
+  .Greets
+  *******
+  	RET, TKM!, KANAL23, LZ0 Members as they all put up with my
+  stupid questions :P
+                                      
+                                      ß      
+                                      ²
+      Ü                               ²Û                               Ü
+   ÜÜ                   ÜÜÛÛÛÛÜ       ²ÛÛÜ      ÜÛ²²ÛÛÜ                  ÜÜ
+    ßßÛÛÛÛ²± °   ±±   ²ÛÛÛ²ß   ß    Ü ÛÛ² ßÜ Ü ß   ßÛÛÛ²±  ±±  °  ±²ÛÛÛÛßß
+                      ±ÛÛÛÛ   ²± ßß   ÛÛ²  ²   ²±   ÛÛÛÛ²
+                       ²²ÛÛÛÜÜ        ÛÛÛÜß      Ü±ÛÛÛÛÛ
+                         ßßßÛÛÛÛÛÛÜÜ ßÛÛ±  ÜÜÛÛÛÛÛÛßßß
+                                ßß²ÛÛ ÛÛÛ ±²Ûßß
+                               Ü ßßß  ²ÛÛÝ ßßß Ü
+                                      °  ±
+
+       This release was brought to you by The Reverse Engineering Team.
+       Drop by our website, for some other tools and papers.. 
+
+                                       ~The Reverse Engineering Team~
+
+         IRC: One Day
+         WWW: http://www.reteam.org -/- http://www.cryptocracking.cjb.net
+         MAIL: ret@reteam.org
+                                      °
+      ÜÜ²ÜÜ                           ±±                           ÜÜ²ÜÜ
+     þ  ÛÛÛÛÛ                         ±±                       ° ±ÛÛÛÛ  þ
+   ÜÜÜÜÛÛÛÛ²ß                  ÜÜÜÛÛ²²±±²²ÛÛÜÜ                   ßÛÛÛÛÛÜ²ÜÜ
+ ²ÛÛÛ²ßß          ÜÜÜÜÜ   ÜÜ²ÛÛÛÛ²²ßßßß°ßß²²ÛÛÛÛÛ²ÜÜ   ²±²ÜÜ          ßß±²ÛÛÛ
+°±²ÛÛÛ      ÜÜÜÜÛÛÛÛ²²ÛÛÛÜÜ Û²ß                ß²Û ÜÜÛÛÛÛÛÛÛÛÛÜÜÜÜ      ÛÛÛÛÛ²
+ß²ÛÛÛÛÛÛÛÛÛÛÛÛ²²ßßßß  ßÛÛÛÛÜ        ÜÜÜ±Ü         ÜÛÛÛÛß  ßßßß²²²ÛÛÛÛÛÛÛÛÛÛ²²ß
+   ßß²²²²ß           ßÜ ±²ÛÛÛÜÜÜÜÛÛÛÛÛÛÛÛÛÛÛÜÜÜÜÜÛÛÛÛ² Üß           ß±±±±ßß
+NFO header: cH!SAC ß     ß²ÛÛÛÛÛÛÛÛ²ßß±²ßßÛÛÛÛÛÛÛ²²ßß     ß NFOLayouts: Flimbo
+                þ            ßßßß     °±     ßßßß            þ
+                                       °
+                    "Retrieving The Essence Of Information"
+                                      °
+                                     ú°°ú
+
